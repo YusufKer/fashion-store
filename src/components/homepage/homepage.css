@@ -1,0 +1,56 @@
+.top-banner{
+    margin:20px 0;
+    padding:0;
+    background-color: red;
+    background-size: cover;
+    min-height: 80vh;
+    position:relative;
+    background-position: center; 
+}
+.banner-info-box{
+    position:absolute;
+    background-color:transparent;
+    color:#f7f7f7;
+    border: 1px solid #f7f7f7;
+    left:15px;
+    bottom:15px;
+    margin:15px;
+    padding:25px;
+    width:40vw;
+    z-index: 1;
+}
+.banner-info-box > p{
+    padding:15px 0;
+}
+.banner-info-box > button{
+    padding:8px;
+    background-color: transparent;
+    color: #f7f7f7;
+    border-color: #f7f7f7;
+}
+.picture-grid{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 1rem;
+}
+@media only screen and (max-width: 600px){
+    .picture-grid{
+        display:grid;
+        grid-template-columns: 1fr;
+    }
+    .wide{
+        grid-column:span 1;
+    }
+    .long{
+        grid-row:span 1;
+    }
+}
+.wide{
+    grid-column: span 2;
+}
+.long{
+    grid-row:span 2
+}
+.hot-sellers{
+    text-align: center;
+}
