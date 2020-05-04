@@ -2,6 +2,7 @@ import React from "react"
 import "./homepage.css"
 //importing components
 import BasicCard from "../cards/BasicCard"
+
 //importing images...
 import banner from "../../images/banner.jpg"
 import mens_fashion from "../../images/mens-fashion.jpg"
@@ -55,7 +56,16 @@ function Homepage(){
                 {image(knife,one_width)}
                 </div>
             </div>
+            <h1>hotsellers</h1>
+            <p>Here's whats hot at the moment</p>
+            <div className="hotsellers-grid">
             <BasicCard/>
+            <BasicCard/>
+            <BasicCard/>
+            <BasicCard/>
+            <BasicCard/>
+
+            </div>
         </>
     )
 }

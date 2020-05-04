@@ -1,3 +1,11 @@
+
+.product-image{
+    width:100%;
+}
+.inter-act{
+    display: flex;
+    justify-content: space-between;
+}
 .like-icon{
     height:16px;
     padding:0 4px;
