@@ -2,6 +2,7 @@ import React from "react"
 import "./homepage.css"
 //importing components
 import BasicCard from "../cards/BasicCard"
+import Footer from "../footer/Footer"
 
 //importing images...
 import banner from "../../images/banner.jpg"
@@ -14,15 +15,13 @@ import knife from "../../images/knife.jpg"
 function Homepage(){
     //takes in imported image as argument and creates a div with that image set as a background... [A]
     const image = (url,hei) =>{
-        return <div 
-            style={{
-                background:`url(${url}) no-repeat center center`,
-                backgroundSize: 'cover',
-                backgroundPosition: 'bottom',
-                width:"auto", 
-                height:hei
-            }} 
-        ></div>
+        return <div style={{
+                    background:`url(${url}) no-repeat center center`,
+                    backgroundSize: 'cover',
+                    backgroundPosition: 'bottom',
+                    width:"auto", 
+                    height:hei
+            }}></div>
     }
     const one_width = Math.round(((window.screen.width - 30 - 16)/3)-15)
     
@@ -64,8 +63,8 @@ function Homepage(){
             <BasicCard/>
             <BasicCard/>
             <BasicCard/>
-
             </div>
+            <Footer/>
         </>
     )
 }
