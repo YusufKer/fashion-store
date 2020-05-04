@@ -55,6 +55,7 @@ function Homepage(){
                 {image(knife,one_width)}
                 </div>
             </div>
+            <BasicCard/>
         </>
     )
 }
