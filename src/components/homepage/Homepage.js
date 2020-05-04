@@ -1,6 +1,7 @@
 import React from "react"
 import "./homepage.css"
 //importing components
+import Navbar from "../nav-bar/Navbar"
 import BasicCard from "../cards/BasicCard"
 import Footer from "../footer/Footer"
 
@@ -27,7 +28,7 @@ function Homepage(){
     
     const addBanner = {backgroundImage:`url(${banner})`}
     return(
-        <>
+        <>  <Navbar/>
             <div style={addBanner} className="top-banner">
                 <div className="banner-info-box">
                     <h1>Missing the outside?</h1>
@@ -38,6 +39,7 @@ function Homepage(){
                     <button>Check Out Our Outdoor Selection</button>
                 </div>
             </div>
+            
             <div className="picture-grid">
                 <div className="grid-item long">
                     {image(barbeque,one_width*2+18)} {/*     example of [A]     */}

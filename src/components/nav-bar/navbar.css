@@ -1,0 +1,15 @@
+.Navbar{
+    background-color:#f7f1e3;
+    margin:15px -15px;
+    padding:15px;
+
+}
+.navbar-links{
+   display: flex; 
+   justify-content: space-between;
+   width:50%;
+}
+.navbar-links > li{
+    list-style-type: none;
+    cursor:pointer;
+}

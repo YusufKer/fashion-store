@@ -15,7 +15,12 @@ function BasicCard(){
             <p>Price</p>
             <div className="inter-act">
                 <button  className="add-to-cart-button">Add to cart</button>
-                <img onClick={()=>setLiked(!liked)} className="like-icon" src={liked?heart_icon_liked:heart_icon} alt="like-icon"/>
+                <img 
+                    onClick={()=>setLiked(!liked)} 
+                    className="like-icon" 
+                    src={liked?heart_icon_liked:heart_icon} 
+                    alt="like-icon"
+                />
             </div>
         </div>
     )
