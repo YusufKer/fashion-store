@@ -1,0 +1,12 @@
+.DetailedCard{
+    margin-top: 30px;
+    display:flex;
+    justify-content: space-between;
+}
+.detailed-card-images{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.first{
+    grid-column: 1/-1;
+}

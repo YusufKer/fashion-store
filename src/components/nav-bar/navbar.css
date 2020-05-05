@@ -11,5 +11,6 @@
 }
 .navbar-links > li{
     list-style-type: none;
+    text-decoration: none;
     cursor:pointer;
 }
